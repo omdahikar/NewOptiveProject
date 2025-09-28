@@ -1,0 +1,30 @@
+{
+    "document_summary": "The document is a multi-page pathology/laboratory test report for an individual named Mr. Dummy, reported on 7/11/2023. It details various test results across several domains including biochemistry, hematology, and hormone levels. The report includes patient details (name, gender, age), lab details (lab number, referral, collection, processing dates, and address) and references the testing laboratory (Sector 18, ROHINI). The report is considered a medical diagnostic report. Its security relevance lies in the confidentiality of patient health information (PHI) and the potential risks of unauthorized access, modification, or disclosure of this sensitive data.",
+    "key_security_findings": [
+        "The report identifies the patient by name (Mr. DUMMY) and includes specific test results. This constitutes Personally Identifiable Information (PII) and Protected Health Information (PHI) that must be safeguarded.",
+        "The document indicates a 'Revised' status and that it 'supersedes all previously issued reports'. This highlights a need for a version control mechanism and secure disposal of old reports to prevent confusion and data leaks.",
+        "The report includes names and titles of medical professionals involved in the testing and validation process, like 'Dr. Sunanda' and 'Senior Consultant Biochemist'. While this provides accountability, it also constitutes PII that must be handled securely.",
+        "The inclusion of the address 'Sector 18, ROHINI' as the location where samples were collected/processed could be used in conjunction with other PII in targeted attacks or identity theft.",
+        "The presence of alphanumeric strings like 'AHEEEHAPMCIOAAMGABHMKINKAHPEFLFCNKKOAFPCJGCJOPAHEEEHA...' could indicate internal system identifiers or obfuscated data, requiring further investigation to understand their purpose and security implications. There is a significant risk these are OCR errors, highlighting a potential vulnerability in the data extraction and handling processes."
+    ],
+    "document_type_classification": "technical",
+    "sensitivity_assessment": "restricted",
+    "compliance_frameworks_referenced": [],
+    "security_domains_covered": [
+        "data security",
+        "privacy",
+        "access control",
+        "audit and accountability"
+    ],
+    "priority_recommendations": [
+        "Implement strong access controls to limit who can view, modify, or share patient reports based on the principle of least privilege.",
+        "Encrypt patient data at rest and in transit to protect it from unauthorized access.",
+        "Develop and enforce a data retention policy that defines how long patient reports are stored and when they are securely disposed of to comply with relevant regulations and minimize data exposure.",
+        "Implement regular security awareness training for all personnel handling patient data to educate them about privacy policies, security best practices, and the risks of data breaches.",
+        "Conduct regular audits to ensure compliance with privacy regulations and security policies and to identify and remediate any vulnerabilities in the system."
+    ],
+    "source_file_name": "sample_report.pdf",
+    "source_file_type": "PDF Document",
+    "model_used": "gemini-2.0-flash",
+    "analysis_timestamp": "2025-09-28 01:18:02"
+}

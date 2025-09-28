@@ -11,8 +11,3 @@ __pycache__/
 # Secrets
 .env
 
-# Data folders
-data/raw_files/
-data/processed_files/
-data/output_reports/
-data/final_reports/
